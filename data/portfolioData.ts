@@ -227,11 +227,11 @@ export const PORTFOLIO_DATA = {
   ],
 
   carouselItems: [
-    { id: 1, title: 'FIFA 22 // 2021-22', subtitle: 'Kevin De Bruyne // Premier League Champions', image: '/images/mancity_fifa22.jpg' },
-    { id: 2, title: 'FIFA 23 // 2022-23', subtitle: 'The Historic Treble // UEFA Champions League Winners', image: '/images/mancity_fifa23.jpg' },
-    { id: 3, title: 'EA SPORTS FC 24 // 2023-24', subtitle: 'Erling Haaland Cover Star // 4-In-A-Row Historic Champions', image: '/images/mancity_fc24.jpg' },
-    { id: 4, title: 'EA SPORTS FC 25 // 2024-25', subtitle: 'Phil Foden & KDB // English Football Dynasty & FC IQ', image: '/images/mancity_fc25.jpg' },
-    { id: 5, title: 'EA SPORTS FC 26 // 2025-26', subtitle: 'The Next-Gen Dynasty // Etihad Stadium Future Horizon', image: '/images/mancity_fc26.jpg' },
+    { id: 1, title: 'FIFA 22 // 2021-22', subtitle: 'Premier League Champions Trophy Ceremony // Etihad Stadium', image: '/images/mancity_fifa22.jpg' },
+    { id: 2, title: 'FIFA 23 // 2022-23', subtitle: 'The Historic Treble // UEFA Champions League Istanbul Walkout', image: '/images/mancity_fifa23.jpg' },
+    { id: 3, title: 'EA SPORTS FC 24 // 2023-24', subtitle: 'Erling Haaland Iconic Celebration // Manchester Derby 1-0', image: '/images/mancity_fc24.jpg' },
+    { id: 4, title: 'EA SPORTS FC 25 // 2024-25', subtitle: 'Kevin De Bruyne PlayStyle+ & FC IQ // Matchplay Simulation', image: '/images/mancity_fc25.jpg' },
+    { id: 5, title: 'EA SPORTS FC 26 // 2025-26', subtitle: 'Next-Gen 4K Matchplay // Manchester City Sky Blue Dynasty', image: '/images/mancity_fc26.jpg' },
   ],
 
   projects: [
