@@ -389,7 +389,7 @@ export const PORTFOLIO_DATA = {
       descriptionEn: 'Enterprise practical project for Provincial Electricity Authority (PEA) Smart Plus application integration, software QA, and regression testing.',
       descriptionTh: 'โครงการเรียนรู้ภาคปฏิบัติระดับองค์กร (การไฟฟ้าส่วนภูมิภาค PEA) การทดสอบระบบ QA และเชื่อมต่อบริการ (วิชา 1322251)',
       category: 'iot',
-      tags: ['Enterprise Testing', 'Mobile Integration', 'CPE Practical', 'QA'],
+      tags: ['Enterprise Testing', 'Mobile Integration', 'PIM CAI Practical', 'QA'],
       repoUrl: 'https://github.com/PhuriphatTyPeZ3r0/App-PEA-Smart-Plus-2026',
     },
     {
@@ -457,7 +457,7 @@ export const PORTFOLIO_DATA = {
     {
       id: 'course-1323416-selected-topics-1',
       title: 'Full-Stack Web Bootcamp (Course 1323416)',
-      titleTh: 'หัวข้อคัดสรร CPE & AI 1 - Full-Stack (วิชา 1323416)',
+      titleTh: 'หัวข้อคัดสรร PIM CAI 1 - Full-Stack (วิชา 1323416)',
       descriptionEn: 'Grade A coursework covering 10 modules: HTML5, CSS3, Bootstrap 5, JS DOM, jQuery, Node.js, Express, REST APIs, EJS, and MySQL.',
       descriptionTh: 'วิชาผลการเรียนระดับ A ครอบคลุม 10 โมดูลพัฒนาเว็บ Full-Stack: HTML5, CSS3, JS, Node, Express, REST API และ MySQL (ปี 2 เทอม 1.2)',
       category: 'coursework',
