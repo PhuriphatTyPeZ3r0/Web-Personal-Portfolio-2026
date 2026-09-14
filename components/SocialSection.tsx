@@ -55,11 +55,11 @@ export const SocialSection = () => {
               <div className="text-cyan-400 group-hover:text-emerald-400 group-hover:scale-110 transition-all duration-300">
                 {getIcon(link.icon)}
               </div>
-              <div className="flex flex-col items-center">
-                <span className="font-orbitron font-bold text-xs text-white group-hover:text-cyan-300 transition-colors">
+              <div className="flex flex-col items-center min-w-0">
+                <span className="font-orbitron font-bold text-xs text-white group-hover:text-cyan-300 transition-colors whitespace-nowrap">
                   {link.name}
                 </span>
-                <span className="font-mono text-[10px] text-slate-400 truncate max-w-[120px]">
+                <span className="font-mono text-[10px] text-slate-400 truncate max-w-[120px] whitespace-nowrap">
                   {link.handle}
                 </span>
               </div>

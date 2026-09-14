@@ -110,27 +110,27 @@ export const HeroSection = () => {
 
           {/* Institutional Badges (GPAX, Year 3, PIM) */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 w-full max-w-2xl mb-9">
-            <div className="mecha-panel rounded-xl p-3 flex items-center justify-center gap-2.5 border-emerald-500/30 hover:border-emerald-400 transition-colors">
-              <Award className="w-5 h-5 text-emerald-400" />
-              <div className="text-left">
-                <div className="font-orbitron font-bold text-sm text-emerald-300">GPAX {profile.gpax}</div>
-                <div className="text-[10px] font-prompt text-slate-400">{lang === 'th' ? 'ผลการเรียนสะสม (เกียรตินิยม)' : 'Cumulative Honors'}</div>
+            <div className="mecha-panel rounded-xl p-3 flex items-center justify-start sm:justify-center gap-3 border-emerald-500/30 hover:border-emerald-400 transition-colors">
+              <Award className="w-5 h-5 text-emerald-400 shrink-0" />
+              <div className="text-left min-w-0">
+                <div className="font-orbitron font-bold text-sm text-emerald-300 whitespace-nowrap">GPAX {profile.gpax}</div>
+                <div className="text-[11px] font-prompt text-slate-400 whitespace-nowrap">{lang === 'th' ? 'เกียรตินิยมอันดับ 1' : 'First-Class Honors'}</div>
               </div>
             </div>
 
-            <div className="mecha-panel rounded-xl p-3 flex items-center justify-center gap-2.5 border-cyan-500/30 hover:border-cyan-400 transition-colors">
-              <GraduationCap className="w-5 h-5 text-cyan-400" />
-              <div className="text-left">
-                <div className="font-orbitron font-bold text-sm text-cyan-300">PIM — CAI</div>
-                <div className="text-[10px] font-prompt text-slate-400">{lang === 'th' ? 'วิศวกรรมคอมพิวเตอร์และ AI' : 'Computer Eng. & AI'}</div>
+            <div className="mecha-panel rounded-xl p-3 flex items-center justify-start sm:justify-center gap-3 border-cyan-500/30 hover:border-cyan-400 transition-colors">
+              <GraduationCap className="w-5 h-5 text-cyan-400 shrink-0" />
+              <div className="text-left min-w-0">
+                <div className="font-orbitron font-bold text-sm text-cyan-300 whitespace-nowrap">PIM — CAI</div>
+                <div className="text-[11px] font-prompt text-slate-400 whitespace-nowrap">{lang === 'th' ? 'วิศวกรรมคอมพิวเตอร์ & AI' : 'Computer Eng. & AI'}</div>
               </div>
             </div>
 
-            <div className="mecha-panel rounded-xl p-3 flex items-center justify-center gap-2.5 border-blue-500/30 hover:border-blue-400 transition-colors">
-              <Calendar className="w-5 h-5 text-blue-400" />
-              <div className="text-left">
-                <div className="font-orbitron font-bold text-sm text-blue-300">{lang === 'th' ? 'ชั้นปีที่ 3' : '3rd Year'}</div>
-                <div className="text-[10px] font-prompt text-slate-400">{lang === 'th' ? 'ภาคเรียนปัจจุบัน (1/2569)' : 'Active Term 2026'}</div>
+            <div className="mecha-panel rounded-xl p-3 flex items-center justify-start sm:justify-center gap-3 border-blue-500/30 hover:border-blue-400 transition-colors">
+              <Calendar className="w-5 h-5 text-blue-400 shrink-0" />
+              <div className="text-left min-w-0">
+                <div className="font-orbitron font-bold text-sm text-blue-300 whitespace-nowrap">{lang === 'th' ? 'ชั้นปีที่ 3' : '3rd Year'}</div>
+                <div className="text-[11px] font-prompt text-slate-400 whitespace-nowrap">{lang === 'th' ? 'ภาคเรียน 1/2569' : 'Active Term 2026'}</div>
               </div>
             </div>
           </div>
@@ -139,15 +139,15 @@ export const HeroSection = () => {
           <div className="flex flex-wrap items-center justify-center gap-4">
             <a
               href="#projects"
-              className="px-6 py-3 rounded-xl font-orbitron font-bold text-xs tracking-wider text-slate-950 bg-gradient-to-r from-cyan-400 to-emerald-400 hover:from-cyan-300 hover:to-emerald-300 shadow-[0_0_20px_rgba(34,211,238,0.4)] hover:shadow-[0_0_30px_rgba(16,185,129,0.6)] transition-all flex items-center gap-2"
+              className="px-6 py-3 rounded-xl font-orbitron font-bold text-xs tracking-wider text-slate-950 bg-gradient-to-r from-cyan-400 to-emerald-400 hover:from-cyan-300 hover:to-emerald-300 shadow-[0_0_20px_rgba(34,211,238,0.4)] hover:shadow-[0_0_30px_rgba(16,185,129,0.6)] transition-all flex items-center gap-2 whitespace-nowrap"
             >
-              <span>{lang === 'th' ? 'สำรวจ 28 ผลงาน' : 'EXPLORE 28 REPOSITORIES'}</span>
+              <span>{lang === 'th' ? 'สำรวจ 27 ผลงาน' : 'EXPLORE 27 REPOSITORIES'}</span>
               <ArrowRight className="w-4 h-4" />
             </a>
 
             <a
               href={`mailto:${profile.email}`}
-              className="px-6 py-3 rounded-xl font-orbitron font-bold text-xs tracking-wider text-cyan-300 bg-slate-900/80 border border-cyan-500/40 hover:border-cyan-300 hover:bg-cyan-950/40 shadow-[0_0_15px_rgba(2,6,23,0.8)] transition-all flex items-center gap-2"
+              className="px-6 py-3 rounded-xl font-orbitron font-bold text-xs tracking-wider text-cyan-300 bg-slate-900/80 border border-cyan-500/40 hover:border-cyan-300 hover:bg-cyan-950/40 shadow-[0_0_15px_rgba(2,6,23,0.8)] transition-all flex items-center gap-2 whitespace-nowrap"
             >
               <Mail className="w-4 h-4 text-cyan-400" />
               <span>{lang === 'th' ? 'ติดต่อผู้พัฒนา' : 'CONTACT ME'}</span>

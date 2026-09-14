@@ -38,32 +38,32 @@ export const EducationSection = () => {
               }`}
             >
               {item.current && (
-                <div className="absolute top-0 right-0 bg-gradient-to-l from-cyan-500 to-emerald-500 text-slate-950 font-orbitron font-bold text-[10px] tracking-widest px-4 py-1 rounded-bl-xl shadow-md uppercase">
+                <div className="absolute top-0 right-0 bg-gradient-to-l from-cyan-500 to-emerald-500 text-slate-950 font-orbitron font-bold text-[10px] tracking-widest px-3.5 py-1 rounded-bl-xl shadow-md uppercase z-10 whitespace-nowrap">
                   ACTIVE // CURRENT
                 </div>
               )}
 
-              <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
-                <div>
-                  <div className="flex items-center gap-2 mb-1">
-                    <School className="w-5 h-5 text-cyan-400" />
-                    <h3 className="font-orbitron font-bold text-lg sm:text-xl text-white">
+              <div className="flex flex-col md:flex-row md:items-start justify-between gap-4 mb-4 pt-1 sm:pt-0">
+                <div className="min-w-0 flex-1 pr-0 md:pr-4">
+                  <div className="flex items-center gap-2 mb-1.5">
+                    <School className="w-5 h-5 text-cyan-400 shrink-0" />
+                    <h3 className="font-orbitron font-bold text-lg sm:text-xl text-white break-words">
                       {lang === 'th' ? item.institutionTh : item.institutionEn}
                     </h3>
                   </div>
-                  <div className="font-prompt text-sm sm:text-base font-medium text-emerald-400">
+                  <div className="font-prompt text-sm sm:text-base font-medium text-emerald-400 leading-snug">
                     {lang === 'th' ? item.degreeTh : item.degreeEn} — {lang === 'th' ? item.majorTh : item.majorEn}
                   </div>
                 </div>
 
-                <div className="flex sm:flex-col items-center sm:items-end gap-2 sm:gap-1">
-                  <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-slate-900 border border-slate-700 text-xs font-mono text-slate-300">
-                    <Calendar className="w-3.5 h-3.5 text-cyan-400" />
-                    <span>{item.period}</span>
+                <div className="shrink-0 flex flex-wrap md:flex-col items-start md:items-end gap-2 mt-1">
+                  <div className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-900/90 border border-slate-700/80 text-xs font-mono text-slate-200 whitespace-nowrap shrink-0 shadow-sm">
+                    <Calendar className="w-3.5 h-3.5 text-cyan-400 shrink-0" />
+                    <span className="whitespace-nowrap">{lang === 'th' ? (item.periodTh || item.period) : (item.periodEn || item.period)}</span>
                   </div>
-                  <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-emerald-950/60 border border-emerald-500/40 text-xs font-orbitron font-bold text-emerald-300">
-                    <Award className="w-3.5 h-3.5 text-emerald-400" />
-                    <span>{item.gpax}</span>
+                  <div className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-emerald-950/60 border border-emerald-500/40 text-xs font-orbitron font-bold text-emerald-300 whitespace-nowrap shrink-0 shadow-sm">
+                    <Award className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
+                    <span className="whitespace-nowrap">{lang === 'th' ? (item.gpaxTh || item.gpax) : (item.gpaxEn || item.gpax)}</span>
                   </div>
                 </div>
               </div>

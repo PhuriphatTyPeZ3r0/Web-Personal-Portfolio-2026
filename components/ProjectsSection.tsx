@@ -79,7 +79,7 @@ export const ProjectsSection = () => {
               <button
                 key={cat.key}
                 onClick={() => setActiveCategory(cat.key)}
-                className={`px-3.5 py-1.5 rounded-xl text-xs font-prompt font-medium transition-all ${
+                className={`px-3.5 py-1.5 rounded-xl text-xs font-prompt font-medium whitespace-nowrap transition-all ${
                   activeCategory === cat.key
                     ? 'bg-gradient-to-r from-cyan-500 to-emerald-500 text-slate-950 font-semibold shadow-[0_0_12px_rgba(34,211,238,0.3)]'
                     : 'text-slate-400 hover:text-slate-200 hover:bg-slate-800/60'
@@ -131,22 +131,22 @@ export const ProjectsSection = () => {
                   : 'hover:border-slate-700'
               }`}
             >
-              {/* Badge if pinned */}
-              {project.badge && (
-                <div className="absolute top-3 right-3 px-2 py-0.5 rounded-md bg-cyan-500/20 border border-cyan-400/40 text-[10px] font-orbitron font-bold text-cyan-300 tracking-wider">
-                  {project.badge}
-                </div>
-              )}
-
               <div>
-                {/* Header Title */}
-                <div className="pr-12 mb-2">
-                  <h3 className="font-orbitron font-bold text-base text-white group-hover:text-cyan-300 transition-colors flex items-center gap-2">
-                    {project.title}
-                  </h3>
-                  <div className="font-prompt text-xs text-emerald-400 font-medium mt-0.5">
-                    {project.titleTh}
+                {/* Header Title & Badge */}
+                <div className="flex items-start justify-between gap-2.5 mb-2.5">
+                  <div className="min-w-0 flex-1">
+                    <h3 className="font-orbitron font-bold text-base text-white group-hover:text-cyan-300 transition-colors break-words">
+                      {project.title}
+                    </h3>
+                    <div className="font-prompt text-xs text-emerald-400 font-medium mt-0.5 break-words">
+                      {project.titleTh}
+                    </div>
                   </div>
+                  {project.badge && (
+                    <span className="shrink-0 px-2 py-0.5 rounded-md bg-cyan-500/20 border border-cyan-400/40 text-[10px] font-orbitron font-bold text-cyan-300 tracking-wider whitespace-nowrap">
+                      {project.badge}
+                    </span>
+                  )}
                 </div>
 
                 {/* Description */}
@@ -159,7 +159,7 @@ export const ProjectsSection = () => {
                   {project.tags.map((tag, tIndex) => (
                     <span
                       key={tIndex}
-                      className="px-2 py-0.5 rounded-md text-[10px] font-mono text-slate-300 bg-slate-950/80 border border-slate-800"
+                      className="px-2 py-0.5 rounded-md text-[10px] font-mono text-slate-300 bg-slate-950/80 border border-slate-800 whitespace-nowrap shrink-0"
                     >
                       {tag}
                     </span>
@@ -173,9 +173,9 @@ export const ProjectsSection = () => {
                   href={project.repoUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 text-xs font-orbitron font-semibold text-slate-300 hover:text-cyan-300 transition-colors"
+                  className="inline-flex items-center gap-1.5 text-xs font-orbitron font-semibold text-slate-300 hover:text-cyan-300 transition-colors whitespace-nowrap"
                 >
-                  <FaGithub className="w-3.5 h-3.5" />
+                  <FaGithub className="w-3.5 h-3.5 shrink-0" />
                   <span>REPOSITORY</span>
                 </a>
 
@@ -184,10 +184,10 @@ export const ProjectsSection = () => {
                     href={project.demoUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg text-xs font-orbitron font-bold tracking-wider text-slate-950 bg-gradient-to-r from-cyan-400 to-emerald-400 hover:from-cyan-300 hover:to-emerald-300 transition-all shadow-[0_0_10px_rgba(34,211,238,0.3)]"
+                    className="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg text-xs font-orbitron font-bold tracking-wider text-slate-950 bg-gradient-to-r from-cyan-400 to-emerald-400 hover:from-cyan-300 hover:to-emerald-300 transition-all shadow-[0_0_10px_rgba(34,211,238,0.3)] whitespace-nowrap shrink-0"
                   >
                     <span>LIVE DEMO</span>
-                    <ExternalLink className="w-3 h-3" />
+                    <ExternalLink className="w-3 h-3 shrink-0" />
                   </a>
                 )}
               </div>

@@ -34,7 +34,10 @@ export const StatsSection = () => {
                 </span>
                 <span className="text-emerald-400 text-xl">{stat.suffix}</span>
               </div>
-              <div className="font-prompt text-xs sm:text-sm text-slate-300 font-medium">
+              <div 
+                className="font-prompt text-xs sm:text-sm text-slate-300 font-medium whitespace-nowrap overflow-hidden text-ellipsis"
+                title={lang === 'th' ? stat.labelTh : stat.labelEn}
+              >
                 {lang === 'th' ? stat.labelTh : stat.labelEn}
               </div>
             </div>

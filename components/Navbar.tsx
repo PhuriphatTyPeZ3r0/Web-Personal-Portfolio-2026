@@ -61,12 +61,12 @@ export const Navbar = () => {
         </Link>
 
         {/* Desktop Navigation Links */}
-        <nav className="hidden md:flex items-center gap-1 bg-slate-900/60 border border-slate-800/80 rounded-full px-4 py-1.5 backdrop-blur-md">
+        <nav className="hidden md:flex items-center gap-1 bg-slate-900/60 border border-slate-800/80 rounded-full px-4 py-1.5 backdrop-blur-md shrink-0">
           {navLinks.map((item) => (
             <a
               key={item.href}
               href={item.href}
-              className="font-prompt text-xs text-slate-300 hover:text-cyan-400 hover:bg-cyan-500/10 px-3 py-1.5 rounded-full transition-all tracking-wide"
+              className="font-prompt text-xs text-slate-300 hover:text-cyan-400 hover:bg-cyan-500/10 px-3 py-1.5 rounded-full transition-all tracking-wide whitespace-nowrap"
             >
               {lang === 'th' ? item.labelTh : item.labelEn}
             </a>
@@ -74,25 +74,25 @@ export const Navbar = () => {
         </nav>
 
         {/* Controls & Actions */}
-        <div className="flex items-center gap-2.5">
+        <div className="flex items-center gap-2.5 shrink-0">
           {/* 3D Orbit Launcher Button */}
           <Link
             href="/github-orbit"
-            className="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-orbitron font-bold tracking-wider text-cyan-300 bg-cyan-950/40 border border-cyan-500/40 hover:border-cyan-400 hover:bg-cyan-500/20 hover:shadow-[0_0_15px_rgba(34,211,238,0.4)] transition-all"
+            className="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-orbitron font-bold tracking-wider text-cyan-300 bg-cyan-950/40 border border-cyan-500/40 hover:border-cyan-400 hover:bg-cyan-500/20 hover:shadow-[0_0_15px_rgba(34,211,238,0.4)] transition-all whitespace-nowrap shrink-0"
             title="Launch 3D Celestial Orbit Scene"
           >
-            <Orbit className="w-3.5 h-3.5 animate-spin-slow text-cyan-400" />
-            <span className="hidden lg:inline">3D ORBIT</span>
+            <Orbit className="w-3.5 h-3.5 animate-spin-slow text-cyan-400 shrink-0" />
+            <span className="hidden lg:inline whitespace-nowrap">3D ORBIT</span>
           </Link>
 
           {/* Language Toggle */}
           <button
             onClick={toggleLang}
-            className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-orbitron font-bold tracking-wider bg-slate-900/80 border border-slate-700/80 hover:border-emerald-400 text-emerald-400 hover:shadow-[0_0_12px_rgba(16,185,129,0.3)] transition-all"
+            className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-orbitron font-bold tracking-wider bg-slate-900/80 border border-slate-700/80 hover:border-emerald-400 text-emerald-400 hover:shadow-[0_0_12px_rgba(16,185,129,0.3)] transition-all whitespace-nowrap shrink-0"
             title="Toggle Language (TH / EN)"
           >
-            <Globe className="w-3.5 h-3.5 text-emerald-400" />
-            <span>{lang.toUpperCase()}</span>
+            <Globe className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
+            <span className="whitespace-nowrap">{lang.toUpperCase()}</span>
           </button>
 
           {/* Mobile Menu Button */}
