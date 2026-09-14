@@ -62,27 +62,21 @@ export const SkillsSection = () => {
           {skillCategories.map((category, index) => (
             <div
               key={index}
-              className="mecha-panel rounded-2xl p-6 relative overflow-hidden group hover:border-cyan-400/60 transition-all duration-300"
+              className="mecha-panel rounded-2xl p-6 relative overflow-hidden group hover:border-cyan-400/60 transition-all duration-300 flex flex-col"
             >
               <h3 className="font-orbitron font-bold text-sm text-cyan-300 mb-4 pb-2 border-b border-slate-800 flex items-center justify-between">
                 <span>{lang === 'th' ? category.titleTh : category.titleEn}</span>
                 <span className="text-[10px] font-mono text-slate-500">[{category.skills.length}]</span>
               </h3>
 
-              <div className="space-y-3">
+              <div className="flex flex-wrap gap-2 pt-1">
                 {category.skills.map((skill, sIndex) => (
-                  <div key={sIndex}>
-                    <div className="flex items-center justify-between text-xs font-prompt mb-1">
-                      <span className="text-slate-200 font-medium">{skill.name}</span>
-                      <span className="font-mono text-emerald-400 text-[11px]">{skill.level}%</span>
-                    </div>
-                    <div className="h-1.5 w-full bg-slate-950 rounded-full overflow-hidden border border-slate-800/80">
-                      <div
-                        className="h-full rounded-full bg-gradient-to-r from-cyan-500 to-emerald-400 transition-all duration-1000 ease-out"
-                        style={{ width: `${skill.level}%` }}
-                      />
-                    </div>
-                  </div>
+                  <span
+                    key={sIndex}
+                    className="px-3 py-1.5 rounded-xl text-xs font-prompt font-medium text-slate-200 bg-slate-900/90 border border-slate-800 hover:border-cyan-400/60 hover:text-cyan-300 hover:bg-cyan-950/30 transition-all whitespace-nowrap shadow-sm"
+                  >
+                    {skill.name}
+                  </span>
                 ))}
               </div>
             </div>
