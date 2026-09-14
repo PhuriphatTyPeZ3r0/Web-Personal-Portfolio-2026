@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&family=Orbitron:wght@400;500;600;700;800;900&family=Prompt:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+:root {
+  --background: #020617;
+  --foreground: #f8fafc;
+  --gn-green: #10b981;
+  --age-cyan: #22d3ee;
+  --cobalt-blue: #2563eb;
+  --crimson-red: #ef4444;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-orbitron: "Orbitron", sans-serif;
+  --font-prompt: "Prompt", sans-serif;
+  --font-kanit: "Kanit", sans-serif;
+  
+  --color-age-blue: #2563eb;
+  --color-age-cyan: #22d3ee;
+  --color-gn-green: #10b981;
+  --color-crimson: #ef4444;
+  --color-mecha-dark: #030712;
+  --color-mecha-panel: #0b1329;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-prompt);
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #020617;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 4px;
+  border: 1px solid rgba(34, 211, 238, 0.3);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #22d3ee;
+  box-shadow: 0 0 10px #22d3ee;
+}
+
+/* Sci-Fi Mecha Utilities */
+@utility mecha-panel {
+  background: rgba(11, 19, 41, 0.7);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(34, 211, 238, 0.25);
+  box-shadow: 0 0 20px rgba(2, 6, 23, 0.8), inset 0 0 15px rgba(34, 211, 238, 0.05);
+}
+
+@utility mecha-panel-hover {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  &:hover {
+    border-color: rgba(34, 211, 238, 0.7);
+    box-shadow: 0 0 25px rgba(34, 211, 238, 0.25), inset 0 0 20px rgba(34, 211, 238, 0.1);
+    transform: translateY(-3px);
+  }
+}
+
+@utility c-funnel-glow {
+  box-shadow: 0 0 15px #22d3ee, inset 0 0 5px #22d3ee;
+  border: 1px solid rgba(34, 211, 238, 0.6);
+}
+
+@utility gn-particle-glow {
+  box-shadow: 0 0 15px #10b981, inset 0 0 5px #10b981;
+  border: 1px solid rgba(16, 185, 129, 0.6);
+}
+
+@utility mecha-corner {
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    width: 8px;
+    height: 8px;
+    border-top: 2px solid #22d3ee;
+    border-left: 2px solid #22d3ee;
+    pointer-events: none;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    right: -1px;
+    width: 8px;
+    height: 8px;
+    border-bottom: 2px solid #22d3ee;
+    border-right: 2px solid #22d3ee;
+    pointer-events: none;
+  }
+}
+
+@utility mecha-corner-green {
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    width: 8px;
+    height: 8px;
+    border-top: 2px solid #10b981;
+    border-left: 2px solid #10b981;
+    pointer-events: none;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    right: -1px;
+    width: 8px;
+    height: 8px;
+    border-bottom: 2px solid #10b981;
+    border-right: 2px solid #10b981;
+    pointer-events: none;
+  }
+}
+
+@utility fade-in-up {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulseGlow {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 0.8; filter: drop-shadow(0 0 10px #22d3ee); }
+}
+
+.pulse-glow {
+  animation: pulseGlow 3s infinite ease-in-out;
+}
