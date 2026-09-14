@@ -32,15 +32,15 @@ function CarouselCard({ item, index, total, radius }: { item: CarouselItem; inde
       <Image 
         url={item.image}
         transparent 
-        opacity={0.8}
-        scale={[2.8, 1.6]}
+        opacity={0.92}
+        scale={[2.8, 1.58]}
         position={[0, 0, 0]}
       />
       
       {/* Holographic Wireframe Border */}
       <mesh position={[0, 0, 0.05]}>
-        <planeGeometry args={[2.9, 1.7]} />
-        <meshBasicMaterial color="#22d3ee" wireframe={true} transparent opacity={0.3} />
+        <planeGeometry args={[2.9, 1.68]} />
+        <meshBasicMaterial color="#22d3ee" wireframe={true} transparent opacity={0.35} />
       </mesh>
 
     </group>
@@ -53,7 +53,7 @@ function CarouselGroup({ items, rotationTarget }: { items: CarouselItem[]; rotat
 
   // Dynamically calculate radius to prevent overlapping cards
   // Multiply items by card width+padding (3.2), divide by 2*PI for circumference
-  const radius = Math.max(2.2, (items.length * 3.2) / (2 * Math.PI));
+  const radius = Math.max(2.4, (items.length * 3.2) / (2 * Math.PI));
 
   useFrame((_, delta) => {
     if (groupRef.current) {
@@ -141,9 +141,14 @@ export const TouchCarousel = ({ items, autoRotate = true, autoRotateInterval = 4
     setIsInteracting(true);
   };
 
+  // Determine active item for HUD overlay
+  const step = (Math.PI * 2) / items.length;
+  const normalizedIndex = ((Math.round(-rotationTarget / step) % items.length) + items.length) % items.length;
+  const activeItem = items[normalizedIndex];
+
   return (
     <div 
-      className="w-full h-72 sm:h-84 relative cursor-grab active:cursor-grabbing c-funnel-glow rounded-3xl overflow-hidden bg-slate-900/60 backdrop-blur-xl border border-cyan-400/30"
+      className="w-full h-80 sm:h-96 relative cursor-grab active:cursor-grabbing c-funnel-glow rounded-3xl overflow-hidden bg-slate-900/60 backdrop-blur-xl border border-cyan-400/30"
       onPointerDown={onPointerDown}
       onPointerMove={onPointerMove}
       onPointerUp={onPointerUp}
@@ -171,11 +176,29 @@ export const TouchCarousel = ({ items, autoRotate = true, autoRotateInterval = 4
       </Canvas>
 
       {/* Swipe Overlay Instruction */}
-      <div className="absolute top-4 left-1/2 -translate-x-1/2 pointer-events-none">
-        <p className="font-orbitron text-[8px] text-age-cyan tracking-[0.3em] font-bold opacity-60 animate-pulse">
-          &lt; DRAG TO ROTATE &gt;
+      <div className="absolute top-4 left-1/2 -translate-x-1/2 pointer-events-none z-10">
+        <p className="font-orbitron text-[8px] text-cyan-400 tracking-[0.3em] font-bold opacity-70 animate-pulse">
+          &lt; DRAG TO ROTATE 360° &gt;
         </p>
       </div>
+
+      {/* Active Card HUD Info Overlay */}
+      {activeItem && (
+        <div className="absolute bottom-3 inset-x-3 sm:inset-x-6 flex items-center justify-between pointer-events-none z-10">
+          <div className="bg-slate-950/85 backdrop-blur-md px-3.5 py-1.5 rounded-xl border border-cyan-500/40 shadow-[0_0_15px_rgba(34,211,238,0.2)] flex items-center gap-2 max-w-[85%] truncate">
+            <span className="font-orbitron font-bold text-xs text-cyan-300 shrink-0">
+              {activeItem.title}
+            </span>
+            <span className="text-slate-600 font-mono text-[10px] shrink-0">|</span>
+            <span className="text-[11px] font-prompt text-slate-200 truncate">
+              {activeItem.subtitle}
+            </span>
+          </div>
+          <div className="flex items-center gap-1.5 bg-slate-950/85 backdrop-blur-md px-3 py-1.5 rounded-xl border border-emerald-500/40 text-[10px] font-mono text-emerald-400 shrink-0">
+            <span>{normalizedIndex + 1} / {items.length}</span>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

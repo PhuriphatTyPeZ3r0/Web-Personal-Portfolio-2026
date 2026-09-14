@@ -227,19 +227,11 @@ export const PORTFOLIO_DATA = {
   ],
 
   carouselItems: [
-    { id: 1, title: 'Code Geass', subtitle: 'Lelouch Lamperouge', image: '/images/codegeass.jpg' },
-    { id: 2, title: 'Eureka Seven', subtitle: 'Renton Thurston', image: '/images/eurekaseven.jpg' },
-    { id: 3, title: 'Gundam 00', subtitle: 'Setsuna F. Seiei (GN Drive)', image: '/images/gundam00.jpg' },
-    { id: 4, title: 'Gundam AGE', subtitle: 'Kio Asuno (AGE-FX)', image: '/images/gundamage.jpg' },
-    { id: 5, title: 'Gundam SEED', subtitle: 'Kira Yamato (Freedom)', image: '/images/gundamseed.jpg' },
-    { id: 6, title: 'Naruto', subtitle: 'Naruto Uzumaki', image: '/images/naruto.jpg' },
-    { id: 7, title: 'Akame ga Kill!', subtitle: 'Akame', image: '/images/akamegakill.jpg' },
-    { id: 8, title: 'Mushoku Tensei', subtitle: 'Rudeus Greyrat', image: '/images/mushokutensei.jpg' },
-    { id: 9, title: 'Attack on Titan', subtitle: 'Eren Yeager', image: '/images/attackontitan.jpg' },
-    { id: 10, title: 'Demon Slayer', subtitle: 'Tanjiro Kamado', image: '/images/demonslayer.jpg' },
-    { id: 11, title: 'Erased', subtitle: 'Satoru Fujinuma', image: '/images/erased.png' },
-    { id: 12, title: 'SSSS Gridman', subtitle: 'Yuta Hibiki', image: '/images/ssssgridman.png' },
-    { id: 13, title: 'Eureka Seven AO', subtitle: 'Ao Fukai', image: '/images/eurekasevenao.jpg' },
+    { id: 1, title: 'FIFA 22', subtitle: 'Kylian Mbappé // HyperMotion Technology', image: '/images/fifa22.jpg' },
+    { id: 2, title: 'FIFA 23', subtitle: 'Kylian Mbappé & Sam Kerr // World Cup Edition', image: '/images/fifa23.jpg' },
+    { id: 3, title: 'EA SPORTS FC 24', subtitle: 'Erling Haaland // PlayStyles & Frostbite Revolution', image: '/images/fc24.jpg' },
+    { id: 4, title: 'EA SPORTS FC 25', subtitle: 'Jude Bellingham // FC IQ & 5v5 Rush', image: '/images/fc25.jpg' },
+    { id: 5, title: 'EA SPORTS FC 26', subtitle: 'The Next Generation // Future Football Experience', image: '/images/fc26.jpg' },
   ],
 
   projects: [
