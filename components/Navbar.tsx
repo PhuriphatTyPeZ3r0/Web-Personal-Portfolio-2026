@@ -76,14 +76,14 @@ export const Navbar = () => {
         {/* Controls & Actions */}
         <div className="flex items-center gap-2.5 shrink-0">
           {/* 3D Orbit Launcher Button */}
-          <Link
-            href="/github-orbit"
+          <a
+            href="#skills-orbit"
             className="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-orbitron font-bold tracking-wider text-cyan-300 bg-cyan-950/40 border border-cyan-500/40 hover:border-cyan-400 hover:bg-cyan-500/20 hover:shadow-[0_0_15px_rgba(34,211,238,0.4)] transition-all whitespace-nowrap shrink-0"
-            title="Launch 3D Celestial Orbit Scene"
+            title="Jump to 3D Celestial Orbit Scene"
           >
             <Orbit className="w-3.5 h-3.5 animate-spin-slow text-cyan-400 shrink-0" />
             <span className="hidden lg:inline whitespace-nowrap">3D ORBIT</span>
-          </Link>
+          </a>
 
           {/* Language Toggle */}
           <button
@@ -119,14 +119,14 @@ export const Navbar = () => {
               {lang === 'th' ? item.labelTh : item.labelEn}
             </a>
           ))}
-          <Link
-            href="/github-orbit"
+          <a
+            href="#skills-orbit"
             onClick={() => setMobileMenuOpen(false)}
             className="flex items-center justify-center gap-2 w-full mt-3 py-2.5 rounded-lg text-xs font-orbitron font-bold tracking-wider text-cyan-300 bg-cyan-950/60 border border-cyan-500/40"
           >
             <Orbit className="w-4 h-4 text-cyan-400" />
-            LAUNCH 3D ORBIT SCENE
-          </Link>
+            3D CELESTIAL ORBIT
+          </a>
         </div>
       )}
     </header>

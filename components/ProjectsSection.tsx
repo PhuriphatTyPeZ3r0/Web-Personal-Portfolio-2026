@@ -111,13 +111,13 @@ export const ProjectsSection = () => {
               ? `แสดงผล: ${filteredProjects.length} จาก 28 คลังผลงาน` 
               : `SHOWING: ${filteredProjects.length} OF 28 REPOSITORIES`}
           </span>
-          <Link
-            href="/github-orbit"
+          <a
+            href="#skills-orbit"
             className="text-cyan-400 hover:text-emerald-400 flex items-center gap-1 transition-colors"
           >
             <Orbit className="w-3.5 h-3.5 animate-spin-slow" />
-            <span>{lang === 'th' ? 'เปิดมุมมอง 3D Orbit' : 'Switch to 3D Orbit View'}</span>
-          </Link>
+            <span>{lang === 'th' ? 'ไปยังมุมมอง 3D Orbit' : 'Jump to 3D Orbit View'}</span>
+          </a>
         </div>
 
         {/* Projects Cards Grid */}

@@ -112,13 +112,13 @@ function CoreHub() {
   );
 }
 
-export function GithubOrbitScene() {
+export function GithubOrbitScene({ className }: { className?: string } = {}) {
   const positions = useMemo(() => fibonacciSphere(SKILLS.length, RADIUS), []);
 
   return (
     <div
-      className="fixed inset-0 w-full h-full"
-      style={{ background: 'radial-gradient(circle at 50% 40%, #24283b 0%, #16161e 70%, #101014 100%)' }}
+      className={className || "relative w-full h-[460px] sm:h-[520px] rounded-2xl overflow-hidden"}
+      style={{ background: 'radial-gradient(circle at 50% 40%, #161b26 0%, #0c1017 70%, #06090e 100%)' }}
     >
       <Canvas camera={{ position: [0, 0.4, 10.5], fov: 45 }}>
         <ambientLight intensity={0.6} />
@@ -137,7 +137,7 @@ export function GithubOrbitScene() {
 
         <OrbitControls
           enablePan={false}
-          enableZoom={true}
+          enableZoom={false}
           target={[0, -0.5, 0]}
           minDistance={8}
           maxDistance={18}

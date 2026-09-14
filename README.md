@@ -17,7 +17,7 @@
 
 <br/>
 
-[<img src="https://api.iconify.design/material-symbols:globe-asia.svg?color=%23FFFFFF" width="16" height="16" align="center" /> **เข้าชมเว็บไซต์พอร์ตโฟลิโอ (Live Production)**](https://resume-phuriphat-hemakul.vercel.app/) &nbsp;|&nbsp; [<img src="https://api.iconify.design/material-symbols:orbit.svg?color=%23FFFFFF" width="16" height="16" align="center" /> **เปิดระบบ 3D Orbit Galaxy Simulation**](https://resume-phuriphat-hemakul.vercel.app/github-orbit) &nbsp;|&nbsp; [<img src="https://api.iconify.design/material-symbols:deployed-code-outline.svg?color=%23FFFFFF" width="16" height="16" align="center" /> **คลัง GitHub ทั้งหมด 27 Repositories**](https://github.com/PhuriphatTyPeZ3r0?tab=repositories)
+[<img src="https://api.iconify.design/material-symbols:globe-asia.svg?color=%23FFFFFF" width="16" height="16" align="center" /> **เข้าชมเว็บไซต์พอร์ตโฟลิโอ (Live Production)**](https://resume-phuriphat-hemakul.vercel.app/) &nbsp;|&nbsp; [<img src="https://api.iconify.design/material-symbols:orbit.svg?color=%23FFFFFF" width="16" height="16" align="center" /> **เปิดระบบ 3D Orbit Galaxy Simulation**](https://resume-phuriphat-hemakul.vercel.app/#skills-orbit) &nbsp;|&nbsp; [<img src="https://api.iconify.design/material-symbols:deployed-code-outline.svg?color=%23FFFFFF" width="16" height="16" align="center" /> **คลัง GitHub ทั้งหมด 27 Repositories**](https://github.com/PhuriphatTyPeZ3r0?tab=repositories)
 
 </div>
 
@@ -32,14 +32,14 @@
 
 ## <img src="https://api.iconify.design/material-symbols:overview-key-outline.svg?color=%2306B6D4" width="22" height="22" align="center" /> 1. ภาพรวมพอร์ตโฟลิโอ (Portfolio Overview)
 
-**Web-Personal-Portfolio-2026** คือ Flagship Developer Portfolio ประจำตัวที่รวบรวมผลงาน นวัตกรรม และศักยภาพทางวิศวกรรมคอมพิวเตอร์และปัญญาประดิษฐ์ทั้งหมดของ ภูริภัทร์ เหมะกุล รวมสุดยอดสถาปัตยกรรม Next.js 15 App Router, React 19, กราฟิก Three.js 3D WebGL, Cyber Cockpit HUD Theme, 3D GitHub Orbit Simulation, 3D Revolving Inspiration Carousel, และระบบแคตตาล็อกผลงาน 27 รายวิชาและโครงงาน พร้อม Multi-language TH/EN
+**Web-Personal-Portfolio-2026** คือ Flagship Developer Portfolio ประจำตัวที่รวบรวมผลงาน นวัตกรรม และศักยภาพทางวิศวกรรมคอมพิวเตอร์และปัญญาประดิษฐ์ทั้งหมดของ ภูริภัทร์ เหมะกุล รวมสุดยอดสถาปัตยกรรม Next.js 15 App Router, React 19, กราฟิก Three.js 3D WebGL, Cyber Cockpit HUD Theme, 3D GitHub Orbit Simulation ฝังในหน้าแรกแบบ Interactive, 3D Revolving Inspiration Carousel, และระบบแคตตาล็อกผลงาน 27 รายวิชาและโครงงาน พร้อม Multi-language TH/EN
 
 ### จุดเด่นเชิงสถาปัตยกรรมและวิศวกรรมซอฟต์แวร์
 - **Next.js 15 App Router & React 19:** สถาปัตยกรรมเว็บยุคใหม่ที่รองรับ Server Component, Turbopack Bundler และ Static Prerendering เต็มรูปแบบ
 - **Tailwind CSS v4 Engine:** ปรับแต่งธีมผ่าน CSS Variables ความเร็วสูง ดีไซน์สไตล์ Cyberpunk HUD, Holographic Glassmorphism และ Particle Accents
 - **3D WebGL Interactive Experiences:**
   - **Dynamic Background:** เครือข่ายทรงกลม 3D Mesh Globe ขับเคลื่อนด้วย Vanta.js / Three.js
-  - **3D Orbit Galaxy View (`/github-orbit`):** จำลองจักรวาลวงโคจรดวงดาวและดาวบริวารแสดงเทคโนโลยีและคลังโค้ด GitHub
+  - **Embedded 3D Celestial Orbit (`#skills-orbit`):** จำลองจักรวาลวงโคจร Three.js WebGL 360° แสดง 9 แกนเทคโนโลยีรอบคลังโค้ด GitHub Core Hub
   - **3D WebGL Touch Carousel:** ระบบภาพม้าหมุน 3 มิติสำหรับแสดงผลงานอนิเมะและแรงบันดาลใจ รองรับ Touch Drag & Mouse Interaction
 - **Bilingual TH/EN State Engine:** สลับภาษาไทย-อังกฤษได้ทันทีผ่าน React Context โดยไม่มีปัญหา Encoding และคงค่าการแสดงผลที่ถูกต้อง
 - **Comprehensive 27-Project Matrix:** ระบบค้นหาและตัวกรอง 6 หมวดหมู่ (Featured Stars, AI & Machine Learning, Full-Stack Web, IoT & Systems, Academic Coursework, All) พร้อมปุ่มเปิด GitHub Repository และ Live Demo
@@ -64,12 +64,10 @@
 ```text
 Web-Personal-Portfolio-2026/
 ├── app/
-│   ├── github-orbit/
-│   │   └── page.tsx            # หน้าจำลอง 3D Orbit Galaxy Simulation
 │   ├── globals.css             # Tailwind CSS v4 & Mecha HUD Styling
 │   ├── layout.tsx              # Root Layout, LanguageProvider & SEO Meta
 │   ├── not-found.tsx           # หน้าแจ้งเตือน 404 Cyber Glitch
-│   └── page.tsx                # หน้าแรก Dashboard Portfolio หลัก
+│   └── page.tsx                # หน้าแรก Dashboard Portfolio หลัก (100% SPA)
 ├── components/
 │   ├── AboutSection.tsx        # ประวัติ 3 เสาหลักวิศวกรรมและเป้าหมาย
 │   ├── EducationSection.tsx    # ประวัติการศึกษา PIM CAI ปี 3 (GPAX 3.59)
