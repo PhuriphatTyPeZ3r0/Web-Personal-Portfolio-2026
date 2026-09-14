@@ -17,7 +17,7 @@
 
 <br/>
 
-[<img src="https://api.iconify.design/material-symbols:globe-asia.svg?color=%23FFFFFF" width="16" height="16" align="center" /> **เข้าชมเว็บไซต์พอร์ตโฟลิโอ (Live Production)**](https://resume-phuriphat-hemakul.vercel.app/) &nbsp;|&nbsp; [<img src="https://api.iconify.design/material-symbols:orbit.svg?color=%23FFFFFF" width="16" height="16" align="center" /> **เปิดระบบ 3D Orbit Galaxy Simulation**](https://resume-phuriphat-hemakul.vercel.app/github-orbit) &nbsp;|&nbsp; [<img src="https://api.iconify.design/material-symbols:deployed-code-outline.svg?color=%23FFFFFF" width="16" height="16" align="center" /> **คลัง GitHub ทั้งหมด 28 Repositories**](https://github.com/PhuriphatTyPeZ3r0?tab=repositories)
+[<img src="https://api.iconify.design/material-symbols:globe-asia.svg?color=%23FFFFFF" width="16" height="16" align="center" /> **เข้าชมเว็บไซต์พอร์ตโฟลิโอ (Live Production)**](https://resume-phuriphat-hemakul.vercel.app/) &nbsp;|&nbsp; [<img src="https://api.iconify.design/material-symbols:orbit.svg?color=%23FFFFFF" width="16" height="16" align="center" /> **เปิดระบบ 3D Orbit Galaxy Simulation**](https://resume-phuriphat-hemakul.vercel.app/github-orbit) &nbsp;|&nbsp; [<img src="https://api.iconify.design/material-symbols:deployed-code-outline.svg?color=%23FFFFFF" width="16" height="16" align="center" /> **คลัง GitHub ทั้งหมด 27 Repositories**](https://github.com/PhuriphatTyPeZ3r0?tab=repositories)
 
 </div>
 
@@ -32,7 +32,7 @@
 
 ## <img src="https://api.iconify.design/material-symbols:overview-key-outline.svg?color=%2306B6D4" width="22" height="22" align="center" /> 1. ภาพรวมพอร์ตโฟลิโอ (Portfolio Overview)
 
-**Web-Personal-Portfolio-2026** คือ Flagship Portfolio ประจำตัวที่รวบรวมผลงาน นวัตกรรม และศักยภาพทางวิศวกรรมคอมพิวเตอร์และปัญญาประดิษฐ์ทั้งหมดของ ภูริภัทร์ เหมะกุล โดยรวมสุดยอดความสามารถจาก `Web-Personal-Portfolio-2026` (ระบบแคตตาล็อกผลงาน 28 รายวิชาและโครงงาน, Multi-language TH/EN, ข้อมูลประวัติการศึกษาและการรับรอง) และ `App-Bio-Website-2026` (สถาปัตยกรรม Next.js 15 App Router, กราฟิก Three.js 3D WebGL, Cyber Cockpit HUD Theme, 3D GitHub Orbit Simulation และ 3D Revolving Inspiration Carousel) เข้าไว้ด้วยกันเป็นหนึ่งเดียวอย่างไร้รอยต่อ
+**Web-Personal-Portfolio-2026** คือ Flagship Developer Portfolio ประจำตัวที่รวบรวมผลงาน นวัตกรรม และศักยภาพทางวิศวกรรมคอมพิวเตอร์และปัญญาประดิษฐ์ทั้งหมดของ ภูริภัทร์ เหมะกุล รวมสุดยอดสถาปัตยกรรม Next.js 15 App Router, React 19, กราฟิก Three.js 3D WebGL, Cyber Cockpit HUD Theme, 3D GitHub Orbit Simulation, 3D Revolving Inspiration Carousel, และระบบแคตตาล็อกผลงาน 27 รายวิชาและโครงงาน พร้อม Multi-language TH/EN
 
 ### จุดเด่นเชิงสถาปัตยกรรมและวิศวกรรมซอฟต์แวร์
 - **Next.js 15 App Router & React 19:** สถาปัตยกรรมเว็บยุคใหม่ที่รองรับ Server Component, Turbopack Bundler และ Static Prerendering เต็มรูปแบบ
@@ -42,7 +42,7 @@
   - **3D Orbit Galaxy View (`/github-orbit`):** จำลองจักรวาลวงโคจรดวงดาวและดาวบริวารแสดงเทคโนโลยีและคลังโค้ด GitHub
   - **3D WebGL Touch Carousel:** ระบบภาพม้าหมุน 3 มิติสำหรับแสดงผลงานอนิเมะและแรงบันดาลใจ รองรับ Touch Drag & Mouse Interaction
 - **Bilingual TH/EN State Engine:** สลับภาษาไทย-อังกฤษได้ทันทีผ่าน React Context โดยไม่มีปัญหา Encoding และคงค่าการแสดงผลที่ถูกต้อง
-- **Comprehensive 28-Project Matrix:** ระบบค้นหาและตัวกรอง 6 หมวดหมู่ (Featured Stars, AI & Machine Learning, Full-Stack Web, IoT & Systems, Academic Coursework, All) พร้อมปุ่มเปิด GitHub Repository และ Live Demo
+- **Comprehensive 27-Project Matrix:** ระบบค้นหาและตัวกรอง 6 หมวดหมู่ (Featured Stars, AI & Machine Learning, Full-Stack Web, IoT & Systems, Academic Coursework, All) พร้อมปุ่มเปิด GitHub Repository และ Live Demo
 
 ---
 
