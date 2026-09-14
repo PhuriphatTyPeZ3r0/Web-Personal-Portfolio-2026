@@ -16,22 +16,22 @@ export const Interests3DSection = () => {
         
         {/* Section Header */}
         <div className="flex flex-col items-center text-center mb-8">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-950/40 border border-cyan-500/30 text-[11px] font-mono text-cyan-400 mb-3">
-            <Gamepad2 className="w-3.5 h-3.5" />
-            <span>GAMING & ESPORTS PASSION // 3D WEBGL REVOLVER</span>
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-sky-950/40 border border-sky-500/30 text-[11px] font-mono text-sky-400 mb-3 shadow-[0_0_15px_rgba(56,189,248,0.15)]">
+            <Trophy className="w-3.5 h-3.5 text-amber-400" />
+            <span>MANCHESTER CITY FC // 3D SKY BLUE CHRONICLES</span>
           </div>
           <h2 className="text-2xl sm:text-4xl font-black font-orbitron tracking-tight text-white uppercase">
-            {lang === 'th' ? 'ความหลงใหลในเกม' : 'GAMING &'}{' '}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-emerald-400">
-              {lang === 'th' ? 'และอีสปอร์ตฟุตบอล 3 มิติ' : 'ESPORTS PASSION'}
+            {lang === 'th' ? 'เกียรติยศและประวัติศาสตร์' : 'MANCHESTER CITY FC'}{' '}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 via-cyan-300 to-amber-300">
+              {lang === 'th' ? 'MANCHESTER CITY 3 มิติ' : 'SKY BLUE DYNASTY'}
             </span>
           </h2>
           <p className="font-prompt text-xs sm:text-sm text-slate-400 mt-2 max-w-2xl">
             {lang === 'th'
-              ? 'บันทึกเส้นทางวิวัฒนาการเกมฟุตบอลระดับโลกจาก FIFA 22 สู่ยุคใหม่ของ EA SPORTS FC 26 สะท้อนความหลงใหลในการวิเคราะห์แท็กติก เทคโนโลยีการจำลองฟิสิกส์ และเอนจินเกมขับเคลื่อนด้วยข้อมูล'
-              : 'A 3D chronological journey through football gaming evolution from FIFA 22 to the next era of EA SPORTS FC 26, celebrating tactical intelligence, physics simulation, and data-driven gameplay engines.'}
+              ? 'บันทึกเส้นทางความสำเร็จอันยิ่งใหญ่ของแมนเชสเตอร์ ซิตี้ ในโลกเกมฟุตบอลเสมือนจริง จากแชมป์พรีเมียร์ลีก สู่ทริปเปิลแชมป์ยุโรปประวัติศาสตร์ และการสร้างตำนานแชมป์ลีก 4 สมัยติดต่อกันในยุค EA SPORTS FC'
+              : 'Chronicling the historic triumphs of Manchester City across football gaming history—from Premier League dominance and the European Treble to the unprecedented 4-in-a-row dynasty in the EA SPORTS FC era.'}
           </p>
-          <div className="h-1 w-16 bg-gradient-to-r from-cyan-400 to-emerald-400 mt-3 rounded-full" />
+          <div className="h-1 w-16 bg-gradient-to-r from-sky-400 via-cyan-400 to-amber-400 mt-3 rounded-full" />
         </div>
 
         {/* 3D Carousel Canvas Container */}
@@ -40,8 +40,8 @@ export const Interests3DSection = () => {
           
           <div className="mt-4 flex items-center justify-between text-[11px] font-mono text-slate-400 px-2">
             <span className="flex items-center gap-1.5">
-              <Trophy className="w-3.5 h-3.5 text-cyan-400" />
-              <span>TIMELINE: 5 MILESTONES [FIFA 22 — FC 26]</span>
+              <Trophy className="w-3.5 h-3.5 text-amber-400" />
+              <span>TIMELINE: 5 SEASONS [2021 — 2026] // MANCHESTER CITY FC</span>
             </span>
             <span className="text-slate-500">
               TOUCH & DRAG TO REVOLVE 360°

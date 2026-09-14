@@ -227,11 +227,11 @@ export const PORTFOLIO_DATA = {
   ],
 
   carouselItems: [
-    { id: 1, title: 'FIFA 22', subtitle: 'Kylian Mbappé // HyperMotion Technology', image: '/images/fifa22.jpg' },
-    { id: 2, title: 'FIFA 23', subtitle: 'Kylian Mbappé & Sam Kerr // World Cup Edition', image: '/images/fifa23.jpg' },
-    { id: 3, title: 'EA SPORTS FC 24', subtitle: 'Erling Haaland // PlayStyles & Frostbite Revolution', image: '/images/fc24.jpg' },
-    { id: 4, title: 'EA SPORTS FC 25', subtitle: 'Jude Bellingham // FC IQ & 5v5 Rush', image: '/images/fc25.jpg' },
-    { id: 5, title: 'EA SPORTS FC 26', subtitle: 'The Next Generation // Future Football Experience', image: '/images/fc26.jpg' },
+    { id: 1, title: 'FIFA 22 // 2021-22', subtitle: 'Kevin De Bruyne // Premier League Champions', image: '/images/mancity_fifa22.jpg' },
+    { id: 2, title: 'FIFA 23 // 2022-23', subtitle: 'The Historic Treble // UEFA Champions League Winners', image: '/images/mancity_fifa23.jpg' },
+    { id: 3, title: 'EA SPORTS FC 24 // 2023-24', subtitle: 'Erling Haaland Cover Star // 4-In-A-Row Historic Champions', image: '/images/mancity_fc24.jpg' },
+    { id: 4, title: 'EA SPORTS FC 25 // 2024-25', subtitle: 'Phil Foden & KDB // English Football Dynasty & FC IQ', image: '/images/mancity_fc25.jpg' },
+    { id: 5, title: 'EA SPORTS FC 26 // 2025-26', subtitle: 'The Next-Gen Dynasty // Etihad Stadium Future Horizon', image: '/images/mancity_fc26.jpg' },
   ],
 
   projects: [

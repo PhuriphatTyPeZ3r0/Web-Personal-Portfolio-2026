@@ -40,7 +40,7 @@ function CarouselCard({ item, index, total, radius }: { item: CarouselItem; inde
       {/* Holographic Wireframe Border */}
       <mesh position={[0, 0, 0.05]}>
         <planeGeometry args={[2.9, 1.68]} />
-        <meshBasicMaterial color="#22d3ee" wireframe={true} transparent opacity={0.35} />
+        <meshBasicMaterial color="#38bdf8" wireframe={true} transparent opacity={0.4} />
       </mesh>
 
     </group>
@@ -77,7 +77,7 @@ function CarouselGroup({ items, rotationTarget }: { items: CarouselItem[]; rotat
       {/* Central Core Hologram (C-Funnel Base) */}
       <mesh ref={coreRef} position={[0, 0, 0]}>
         <cylinderGeometry args={[radius * 0.4, radius * 0.5, 4, 32]} />
-        <meshBasicMaterial color="#22d3ee" wireframe={true} transparent opacity={0.1} />
+        <meshBasicMaterial color="#38bdf8" wireframe={true} transparent opacity={0.12} />
       </mesh>
 
       <group ref={groupRef}>
@@ -148,7 +148,7 @@ export const TouchCarousel = ({ items, autoRotate = true, autoRotateInterval = 4
 
   return (
     <div 
-      className="w-full h-80 sm:h-96 relative cursor-grab active:cursor-grabbing c-funnel-glow rounded-3xl overflow-hidden bg-slate-900/60 backdrop-blur-xl border border-cyan-400/30"
+      className="w-full h-80 sm:h-96 relative cursor-grab active:cursor-grabbing c-funnel-glow rounded-3xl overflow-hidden bg-slate-900/70 backdrop-blur-xl border border-sky-400/40 shadow-[0_0_25px_rgba(56,189,248,0.15)]"
       onPointerDown={onPointerDown}
       onPointerMove={onPointerMove}
       onPointerUp={onPointerUp}
@@ -158,8 +158,8 @@ export const TouchCarousel = ({ items, autoRotate = true, autoRotateInterval = 4
     >
       {/* Interactive 3D Canvas */}
       <Canvas camera={{ position: [0, 0, 3.2], fov: 45 }}>
-        <ambientLight intensity={0.5} />
-        <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} intensity={2} color="#22d3ee" />
+        <ambientLight intensity={0.55} />
+        <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} intensity={2} color="#38bdf8" />
         
         <CarouselGroup items={items} rotationTarget={rotationTarget} />
         
@@ -177,16 +177,19 @@ export const TouchCarousel = ({ items, autoRotate = true, autoRotateInterval = 4
 
       {/* Swipe Overlay Instruction */}
       <div className="absolute top-4 left-1/2 -translate-x-1/2 pointer-events-none z-10">
-        <p className="font-orbitron text-[8px] text-cyan-400 tracking-[0.3em] font-bold opacity-70 animate-pulse">
-          &lt; DRAG TO ROTATE 360° &gt;
+        <p className="font-orbitron text-[8px] text-sky-400 tracking-[0.3em] font-bold opacity-80 animate-pulse">
+          &lt; MANCHESTER CITY FC // DRAG TO ROTATE 360° &gt;
         </p>
       </div>
 
       {/* Active Card HUD Info Overlay */}
       {activeItem && (
         <div className="absolute bottom-3 inset-x-3 sm:inset-x-6 flex items-center justify-between pointer-events-none z-10">
-          <div className="bg-slate-950/85 backdrop-blur-md px-3.5 py-1.5 rounded-xl border border-cyan-500/40 shadow-[0_0_15px_rgba(34,211,238,0.2)] flex items-center gap-2 max-w-[85%] truncate">
-            <span className="font-orbitron font-bold text-xs text-cyan-300 shrink-0">
+          <div className="bg-slate-950/90 backdrop-blur-md px-3.5 py-1.5 rounded-xl border border-sky-400/40 shadow-[0_0_20px_rgba(56,189,248,0.25)] flex items-center gap-2 max-w-[85%] truncate">
+            <span className="px-1.5 py-0.5 rounded bg-sky-500/20 text-sky-300 font-mono text-[9px] uppercase font-bold tracking-wider shrink-0">
+              MCFC
+            </span>
+            <span className="font-orbitron font-bold text-xs text-sky-300 shrink-0">
               {activeItem.title}
             </span>
             <span className="text-slate-600 font-mono text-[10px] shrink-0">|</span>
@@ -194,7 +197,7 @@ export const TouchCarousel = ({ items, autoRotate = true, autoRotateInterval = 4
               {activeItem.subtitle}
             </span>
           </div>
-          <div className="flex items-center gap-1.5 bg-slate-950/85 backdrop-blur-md px-3 py-1.5 rounded-xl border border-emerald-500/40 text-[10px] font-mono text-emerald-400 shrink-0">
+          <div className="flex items-center gap-1.5 bg-slate-950/90 backdrop-blur-md px-3 py-1.5 rounded-xl border border-sky-500/40 text-[10px] font-mono text-sky-300 shrink-0">
             <span>{normalizedIndex + 1} / {items.length}</span>
           </div>
         </div>

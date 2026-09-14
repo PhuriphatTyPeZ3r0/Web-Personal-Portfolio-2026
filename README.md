@@ -40,7 +40,7 @@
 - **3D WebGL Interactive Experiences:**
   - **Dynamic Background:** เครือข่ายทรงกลม 3D Mesh Globe ขับเคลื่อนด้วย Vanta.js / Three.js
   - **Embedded 3D Celestial Orbit (`#skills-orbit`):** จำลองจักรวาลวงโคจร Three.js WebGL 360° แสดง 9 แกนเทคโนโลยีรอบคลังโค้ด GitHub Core Hub
-  - **3D WebGL Touch Carousel:** ระบบภาพม้าหมุน 3 มิติแสดง Timeline ความหลงใหลในเกมฟุตบอลระดับโลก (FIFA 22 — FC 26) รองรับ Touch Drag & Mouse Interaction
+  - **3D WebGL Touch Carousel:** ระบบภาพม้าหมุน 3 มิติแสดง Timeline เกียรติยศ Manchester City และวิวัฒนาการเกมฟุตบอล (FIFA 22 — FC 26) ในโทนสี Sky Blue รองรับ Touch Drag & Mouse Interaction
 - **Bilingual TH/EN State Engine:** สลับภาษาไทย-อังกฤษได้ทันทีผ่าน React Context โดยไม่มีปัญหา Encoding และคงค่าการแสดงผลที่ถูกต้อง
 - **Comprehensive 27-Project Matrix:** ระบบค้นหาและตัวกรอง 6 หมวดหมู่ (Featured Stars, AI & Machine Learning, Full-Stack Web, IoT & Systems, Academic Coursework, All) พร้อมปุ่มเปิด GitHub Repository และ Live Demo
 
