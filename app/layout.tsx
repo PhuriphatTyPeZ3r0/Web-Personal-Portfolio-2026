@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Phuriphat Hemakul | Flagship Developer Portfolio & Bio Hub",
     description: "3rd Year Computer Engineering and AI Student at PIM. GPAX 3.59. Explore 28+ projects, live demos, and 3D WebGL scenes.",
-    url: "https://resume-phuriphat-hemakul.vercel.app",
+    url: "https://portfolio-phuriphatizamus-projects.vercel.app",
     siteName: "Phuriphat Hemakul Portfolio",
     type: "website",
   },

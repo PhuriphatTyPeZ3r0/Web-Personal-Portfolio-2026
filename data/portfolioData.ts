@@ -42,7 +42,7 @@ export const PORTFOLIO_DATA = {
     location: 'Nonthaburi / Bangkok, Thailand',
     email: 'phuriphathem@gmail.com',
     phone: '+66 64 340 8651',
-    portfolioUrl: 'https://resume-phuriphat-hemakul.vercel.app',
+    portfolioUrl: 'https://portfolio-phuriphatizamus-projects.vercel.app',
   },
 
   socialLinks: [
@@ -310,7 +310,7 @@ export const PORTFOLIO_DATA = {
       category: 'featured',
       tags: ['Next.js 15', 'Three.js', 'React 19', 'WebGL', 'Tailwind v4'],
       repoUrl: 'https://github.com/PhuriphatTyPeZ3r0/Web-Personal-Portfolio-2026',
-      demoUrl: 'https://resume-phuriphat-hemakul.vercel.app',
+      demoUrl: 'https://portfolio-phuriphatizamus-projects.vercel.app',
       badge: 'Flagship ★',
       highlight: true,
     },

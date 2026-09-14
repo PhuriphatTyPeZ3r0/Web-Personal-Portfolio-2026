@@ -9,7 +9,7 @@
 [![React: 19](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
 [![Tailwind: v4](https://img.shields.io/badge/Tailwind_CSS-v4-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
 [![Three.js: 3D WebGL](https://img.shields.io/badge/3D%20Engine-Three.js%20WebGL-000000?style=for-the-badge&logo=threedotjs&logoColor=white)](https://threejs.org/)
-[![Deployed on: Vercel](https://img.shields.io/badge/Deployment-Vercel-black?style=for-the-badge&logo=vercel&logoColor=white)](https://resume-phuriphat-hemakul.vercel.app/)
+[![Deployed on: Vercel](https://img.shields.io/badge/Deployment-Vercel-black?style=for-the-badge&logo=vercel&logoColor=white)](https://portfolio-phuriphatizamus-projects.vercel.app/)
 
 **Flagship Developer Portfolio & 3D Interactive Cyber Cockpit**  
 *สาขาวิชาวิศวกรรมคอมพิวเตอร์และปัญญาประดิษฐ์ (CAI) — สถาบันการจัดการปัญญาภิวัฒน์ (PIM)*  
@@ -17,7 +17,7 @@
 
 <br/>
 
-[<img src="https://api.iconify.design/material-symbols:globe-asia.svg?color=%23FFFFFF" width="16" height="16" align="center" /> **เข้าชมเว็บไซต์พอร์ตโฟลิโอ (Live Production)**](https://resume-phuriphat-hemakul.vercel.app/) &nbsp;|&nbsp; [<img src="https://api.iconify.design/material-symbols:orbit.svg?color=%23FFFFFF" width="16" height="16" align="center" /> **เปิดระบบ 3D Orbit Galaxy Simulation**](https://resume-phuriphat-hemakul.vercel.app/#skills-orbit) &nbsp;|&nbsp; [<img src="https://api.iconify.design/material-symbols:deployed-code-outline.svg?color=%23FFFFFF" width="16" height="16" align="center" /> **คลัง GitHub ทั้งหมด 27 Repositories**](https://github.com/PhuriphatTyPeZ3r0?tab=repositories)
+[<img src="https://api.iconify.design/material-symbols:globe-asia.svg?color=%23FFFFFF" width="16" height="16" align="center" /> **เข้าชมเว็บไซต์พอร์ตโฟลิโอ (Live Production)**](https://portfolio-phuriphatizamus-projects.vercel.app/) &nbsp;|&nbsp; [<img src="https://api.iconify.design/material-symbols:orbit.svg?color=%23FFFFFF" width="16" height="16" align="center" /> **เปิดระบบ 3D Orbit Galaxy Simulation**](https://portfolio-phuriphatizamus-projects.vercel.app/#skills-orbit) &nbsp;|&nbsp; [<img src="https://api.iconify.design/material-symbols:deployed-code-outline.svg?color=%23FFFFFF" width="16" height="16" align="center" /> **คลัง GitHub ทั้งหมด 27 Repositories**](https://github.com/PhuriphatTyPeZ3r0?tab=repositories)
 
 </div>
 
@@ -121,7 +121,7 @@ npm run start
 - **อีเมล:** [phuriphathem@gmail.com](mailto:phuriphathem@gmail.com)
 - **GitHub:** [@PhuriphatTyPeZ3r0](https://github.com/PhuriphatTyPeZ3r0)
 - **LinkedIn:** [Phuriphat Hemakul](https://www.linkedin.com/in/phuriphat-hemakul-147321319/)
-- **Live Portfolio:** [resume-phuriphat-hemakul.vercel.app](https://resume-phuriphat-hemakul.vercel.app/)
+- **Live Portfolio:** [portfolio-phuriphatizamus-projects.vercel.app](https://portfolio-phuriphatizamus-projects.vercel.app/)
 
 ---
 
